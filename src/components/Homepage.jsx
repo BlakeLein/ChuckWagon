@@ -6,7 +6,9 @@ export default function Homepage() {
   return (
     <div className="homepage">
       <div className="container-1">
-        <button className="home-order-btn">Order Now</button>
+        <Link to="/menu">
+          <button className="home-order-btn">Order Now</button>
+        </Link>
       </div>
       <h1 id="h1">Specials For Every Day of the Week</h1>
       <div className="container-2">
@@ -29,9 +31,6 @@ export default function Homepage() {
           </div>
           <div className="five">
             <h2 id="label">Lunch Specials</h2>
-          </div>
-          <div className="six">
-            <h2 id="label">Catering</h2>
           </div>
         </div>
       </div>

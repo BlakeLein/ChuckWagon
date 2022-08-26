@@ -107,11 +107,11 @@
   height: 600px;
 }
 .home-order-btn {
-  width: 15%;
+  width: 100%;
   height: 50px;
   background-color: #476c9b;
   color: white;
-  font-size: 16px;
+  font-size: 20px;
   padding: 12px 24px;
   border: none;
   cursor: pointer;
@@ -129,7 +129,7 @@
   height: 60px;
   background-color: #476c9b;
   color: white;
-  font-size: 16px;
+  font-size: 18px;
   padding: 12px 24px;
   border: none;
   cursor: pointer;
@@ -153,8 +153,8 @@
     "one one two two two two"
     "three three three four four four"
     "three three three four four four"
-    "five five five five six six"
-    "five five five five six six";
+    "five five five five five five"
+    "five five five five five five";
 
   gap: 20px;
   margin: 20px;
@@ -197,19 +197,12 @@
   background-size: cover;
   background-repeat: no-repeat;
 }
-.six {
-  grid-area: six;
-  border-radius: 10px;
-  background-image: url("./images/catering.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-}
 
 #label {
   width: 100%;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
-  background-color: #101419;
+  background-color: #476c9b;
   color: whitesmoke;
   padding: 5px 0px;
 }
