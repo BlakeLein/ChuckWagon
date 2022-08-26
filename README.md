@@ -1,70 +1,84 @@
-# Getting Started with Create React App
+# **_Chuck Wagon_**
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+"Musicly" is an online application where music instructors and students can coordinate private lessons. This website utilizes a full-stack coding library (HTML, CSS, JavaScript, Node.js, Express.js, Postgres, and Sequelize).
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## **Created By**
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Blake Lein
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Published September 2022
 
-### `npm test`
+[Email Me](blake.lein@gmail.com) | [GitHub](https://github.com/BlakeLein/Musicly) | [LinkedIn](https://www.linkedin.com/in/blake-lein-bb6187238)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+[You can view an article I wrote about the making of this project here](https://medium.com/@blake.lein/lessons-in-full-stack-8ee5911553bb)
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## **Requirements**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Musicly is deployed online, so all you need to get started is this link: ("""")
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## How Musicly Works
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Wesbite Overview
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Musicly is an online web application that utilizes a full-stack coding library to give instructors and students the ability to schedule and cancel private music lessons. Instructors can create lesson slots to include date, start and stop time, and cost. Students can track all available lessons that their teacher has created and claim them so no other student can. These claimed lessons appear in their "My Lessons" tab and simultaneously show up in their teacher's "Claimed Lessons" tab. Since Musicly requires a password-protected account, all information is confidential between the instructor and student
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Website Features
 
-## Learn More
+Here are some of the website's features in greater detail:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Password-protected accounts for instructor and student privacy.
+- Resonsive on all media devices.
+- "Create Lesson" feature for instructors to build out their schedule based on dates, times, and cost.
+- Instructors can cancel and remove students from their schedule.
+- Ability for students to claim available lessons and have them show up as claimed on their instructor's account.
+- Full capabilities for updating account information or deleting your account altogether.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+## "Discover America" In Development
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+This website represents the third major project in our Digital Crafts coursework and demonstrates our first full-stack project. Musicly utilizes HTML, CSS, JavaScript, Node.js, Express.js, PostgreSQL, and Sequelize.
 
-### Analyzing the Bundle Size
+As our projects have gotten bigger, so also has the potential for each project. Here are some ways we might expand Musicly:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- Creating an authentication system for users creating their accounts.
+- Creating an approval process for instructors signing up.
+- Adding a messaging feature to the app for students and parents to communicate directly through the app.
+- Sorting the lesson slots by date with an automatic expiration system.
+- A "calendar" layout for created lessons to appear in a neat format.
 
-### Making a Progressive Web App
+## Photos of Musicly
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+<img src="public/images/home.png" 
+alt="Home Page"
+width="900" height="400">
 
-### Advanced Configuration
+<img src="public/images/signin.png" 
+alt="Sign In Page"
+width="900" height="400">
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+<img src="public/images/instructorDash.png" 
+alt="Student Dash"
+width="900" height="400">
 
-### Deployment
+<img src="public/images/studentDash.png" 
+alt="Mobile Dash"
+width="900" height="400">
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+<img src="public/images/newLesson.png" 
+alt="Create Lesson Page"
+width="900" height="400">
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<img src="public/images/settings.png" 
+alt="Settings Page"
+width="900" height="400">
