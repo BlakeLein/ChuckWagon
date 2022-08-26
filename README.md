@@ -12,17 +12,17 @@
 
 Published September 2022
 
-[Email Me](blake.lein@gmail.com) | [GitHub](https://github.com/BlakeLein/Musicly) | [LinkedIn](https://www.linkedin.com/in/blake-lein-bb6187238)
+[Email Me](blake.lein@gmail.com) | [GitHub](https://github.com/BlakeLein/ChuckWagon) | [LinkedIn](https://www.linkedin.com/in/blake-lein-bb6187238)
 
-[You can view an article I wrote about the making of this project here](https://medium.com/@blake.lein/lessons-in-full-stack-8ee5911553bb)
+[You can view an article I wrote about the making of this project here]()
 
 ---
 
 ## **Requirements**
 
-Musicly is deployed online, so all you need to get started is this link: ("""")
+Chuck Wagon is deployed online, so all you need is this [link](www.www.com)
 
-## How Musicly Works
+## How Chuck Wagon Works
 
 ---
 
@@ -45,7 +45,7 @@ Here are some of the website's features in greater detail:
 
 ---
 
-## "Discover America" In Development
+## Chuck Wagon In Development
 
 This website represents the third major project in our Digital Crafts coursework and demonstrates our first full-stack project. Musicly utilizes HTML, CSS, JavaScript, Node.js, Express.js, PostgreSQL, and Sequelize.
 
@@ -57,7 +57,7 @@ As our projects have gotten bigger, so also has the potential for each project. 
 - Sorting the lesson slots by date with an automatic expiration system.
 - A "calendar" layout for created lessons to appear in a neat format.
 
-## Photos of Musicly
+## Photos of Chuck Wagons
 
 <img src="public/images/home.png" 
 alt="Home Page"
