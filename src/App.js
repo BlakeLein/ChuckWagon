@@ -11,6 +11,8 @@ import Footer from "./components/Footer";
 import OurStory from "./components/OurStory";
 import Specials from "./components/Specials";
 import Store from "./components/Store";
+import StoreItemPage from "./components/StoreItemPage";
+import Contact from "./components/Contact";
 
 function App() {
   return (
@@ -22,10 +24,12 @@ function App() {
         <Route path="about" element={<OurStory />} />
         <Route path="careers" element={<Careers />} />
         <Route path="store" element={<Store />} />
+        <Route path="storeItem" element={<StoreItemPage />} />
         <Route path="locate" element={<FindRestaurant />} />
         <Route path="login" element={<Login />} />
         <Route path="cart" element={<Cart />} />
-        <Route path="specials" element={<Specials />}></Route>
+        <Route path="contact" element={<Contact />} />
+        <Route path="specials" element={<Specials />} />
       </Routes>
       <Footer />
     </div>

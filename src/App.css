@@ -17,6 +17,7 @@
   width: 100vw;
   height: 100vh;
   font-family: "Montserrat", sans-serif;
+  background-color: whitesmoke;
 }
 
 .navbar {
@@ -271,8 +272,9 @@
 }
 .footer {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
+  justify-content: center;
   width: 100%;
   height: auto;
   margin: 0;
@@ -283,13 +285,26 @@
   color: whitesmoke;
   overflow: hidden;
 }
-/* .footer-img-container {
-  width: 100%;
-  background-color: #101419;
-  background-size: cover;
-  margin: 0;
-  padding: 0;
-} */
+
+.about-links {
+  display: flex;
+  flex-direction: column;
+}
+.about-links a {
+  text-decoration: none;
+  color: whitesmoke;
+  cursor: pointer;
+}
+.about-links a:hover {
+  color: #468c98;
+}
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin-bottom: 200px;
+  width: 20%;
+}
 
 .footer img {
   margin: 0;

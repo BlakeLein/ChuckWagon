@@ -1,0 +1,97 @@
+/* Styling for Store */
+.dummy {
+  width: 100%;
+  height: 100px;
+}
+#h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  color: #101419;
+  margin: 20px;
+}
+
+.store-container {
+  display: flex;
+  overflow-y: scroll;
+  gap: 10px;
+  margin: 10px;
+  height: auto;
+  background-size: cover;
+}
+.store-test {
+  width: 250px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #984447;
+  border-radius: 10px;
+}
+
+.shop-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px 5px;
+  border: solid 3px #476c9b;
+  color: #101419;
+}
+
+.shop-card-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.shop-card-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.shop-item img {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  /* border-radius: 5px 5px 0 0; */
+}
+
+.shop-order-btn {
+  border: none;
+  background-color: #476c9b;
+  color: #add9f4;
+  cursor: pointer;
+  width: 100%;
+  height: 30px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.shop-order-btn:hover {
+  border: none;
+  background-color: #add9f4;
+  color: #101419;
+}
+
+.store-item-page-container {
+  width: auto;
+  height: auto;
+  border: solid 1px black;
+  margin: 200px 100px 100px 100px;
+  background-color: whitesmoke;
+}
+
+#store-item-page-h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  color: #101419;
+}
+
+/* .store-item-page-inner-container {
+  width: auto;
+  height: 500px;
+} */
