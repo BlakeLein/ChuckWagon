@@ -19,7 +19,7 @@ export default function () {
           <h1 id="h1">Appetizers</h1>
           <div className="card-container">
             {apps.map((app) => (
-              <MenuItem item={app} />
+              <MenuItem key={app.key} item={app} />
             ))}
           </div>
         </div>
@@ -28,7 +28,7 @@ export default function () {
             <h1 id="h1">Entrees</h1>
             <div className="card-container">
               {entrees.map((entree) => (
-                <MenuItem item={entree} />
+                <MenuItem key={entree.key} item={entree} />
               ))}
             </div>
           </div>
@@ -38,7 +38,7 @@ export default function () {
             <h1 id="h1">Sides</h1>
             <div className="card-container">
               {sides.map((side) => (
-                <MenuItem item={side} />
+                <MenuItem key={side.key} item={side} />
               ))}
             </div>
           </div>
@@ -48,7 +48,7 @@ export default function () {
             <h1 id="h1">Desserts</h1>
             <div className="card-container">
               {desserts.map((dessert) => (
-                <MenuItem item={dessert} />
+                <MenuItem key={dessert.key} item={dessert} />
               ))}
             </div>
           </div>
@@ -58,7 +58,7 @@ export default function () {
             <h1 id="h1">Beverages</h1>
             <div className="card-container">
               {beverages.map((beverage) => (
-                <MenuItem item={beverage} />
+                <MenuItem key={beverage.key} item={beverage} />
               ))}
             </div>
           </div>

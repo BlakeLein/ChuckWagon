@@ -1,1 +1,46 @@
 /*Styling for Specials*/
+.specials-container {
+  background-color: whitesmoke;
+}
+
+.specials-inner-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.specials-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 20px;
+  height: 400px;
+  width: 60%;
+  border: solid 1px #101419;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.specials-item img {
+  width: 60%;
+  height: auto;
+}
+
+.specials-info {
+  width: 40%;
+  background-color: #476c9b;
+  color: whitesmoke;
+}
+
+.day {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  color: whitesmoke;
+}
+#h1-sub-specials {
+  font-weight: 300;
+  font-size: 30px;
+  color: whitesmoke;
+  margin: 20px;
+  font-family: "Rye", cursive;
+}

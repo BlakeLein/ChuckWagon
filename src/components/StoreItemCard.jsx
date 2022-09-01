@@ -9,20 +9,19 @@ export default function ShopItem(props) {
     <div className="shop-item">
       <div className="store-test">
         <img src={props.item.imgA} />
-        <h2 id="h1">{props.item.name}</h2>
+        <h3 id="h1-sub">{props.item.name}</h3>
         <div className="shop-card-info">
           <div className="shop-card-text">
             <p>${props.item.price}</p>
-            <Link to="/storeItem">
-              <button
-                name={props.item.name}
-                onClick={() => {
-                  dispatch({ type: "VIEW_ITEM", payload: props.item });
-                }}
-                className="shop-order-btn"
-              >
-                Add to Order
-              </button>
+            <Link
+              to="/storeItem"
+              name={props.item.name}
+              onClick={() => {
+                dispatch({ type: "VIEW_ITEM", payload: props.item });
+              }}
+              className="shop-order-btn"
+            >
+              Add to Order
             </Link>
           </div>
         </div>

@@ -33,12 +33,28 @@ const initialState = {
       message: "This is my kids' favorite place to eat!",
     },
   ],
+  receviedReviews: [],
+  emailToAdd: "",
+  emailList: [],
 };
 
 const reviewReducer = (state = initialState, action) => {
   switch (action.type) {
-    case "":
-      return state;
+    case "ADD_REVIEW":
+      return {
+        ...state,
+        receviedReviews: [...state.receviedReviews, action.payload],
+      };
+    case "EMAIL_TO_ADD":
+      return {
+        ...state,
+        emailToAdd: action.payload,
+      };
+    case "ADD_EMAIL":
+      return {
+        ...state,
+        emailList: [...state.emailList, state.emailToAdd],
+      };
     default:
       return state;
   }

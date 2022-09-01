@@ -1,6 +1,10 @@
 /* Styles for App, HomePage, Navbar, and Footer */
 
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap");
+/* font-family: "Montserrat", sans-serif; */
+
+@import url("https://fonts.googleapis.com/css2?family=Rye&display=swap");
+/* font-family: 'Rye', cursive; */
 
 /* Color Scheme 
 #984447 - Red
@@ -32,6 +36,7 @@
   z-index: 1000;
   background-color: #101419;
   color: whitesmoke;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .navbar img {
@@ -59,9 +64,59 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  width: 30%;
+  width: 20%;
   height: 100%;
   margin-right: 20px;
+}
+
+.error-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.error-container a {
+  text-decoration: none;
+  height: auto;
+  background-color: #476c9b;
+  color: whitesmoke;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-bottom: 50px;
+  cursor: pointer;
+}
+
+.error-container a:hover {
+  background-color: #add9f4;
+  color: #101419;
+}
+
+.cart-icon-container {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  gap: 10px;
+}
+
+.red-cart-dot {
+  background-color: #984447;
+  border-radius: 50%;
+  padding: 2px;
+  width: 15px;
+}
+
+.hidden {
+  display: none;
+  visibility: hidden;
+}
+
+.visible {
+  visibility: visible;
 }
 
 .icon {
@@ -78,10 +133,19 @@
 }
 
 #h1 {
-  font-family: "Montserrat", sans-serif;
   font-weight: 400;
+  font-size: 48px;
   color: #101419;
   margin: 20px;
+  font-family: "Rye", cursive;
+}
+
+#h1-sub {
+  font-weight: 400;
+  font-size: 20px;
+  color: #101419;
+  margin: 20px;
+  font-family: "Rye", cursive;
 }
 
 .container-1 {
@@ -94,6 +158,7 @@
   background-size: cover;
   width: 100%;
   height: 600px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .container-2 {
@@ -106,13 +171,16 @@
   background-size: cover;
   width: 100%;
   height: 600px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .home-order-btn {
   width: 100%;
   height: 50px;
   background-color: #476c9b;
-  color: white;
+  color: whitesmoke;
+  font-family: "Montserrat", sans-serif;
   font-size: 20px;
+  font-weight: 400;
   padding: 12px 24px;
   border: none;
   cursor: pointer;
@@ -127,16 +195,19 @@
 
 .specials-btn {
   width: 20%;
-  height: 60px;
+  height: auto;
   background-color: #476c9b;
-  color: white;
-  font-size: 18px;
+  color: whitesmoke;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
   padding: 12px 24px;
   border: none;
   cursor: pointer;
   border-radius: 5px;
   margin-bottom: 50px;
   cursor: pointer;
+  text-decoration: none;
 }
 .specials-btn:hover {
   background-color: #add9f4;
@@ -169,6 +240,7 @@
   background-image: url("./images/apps.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .two {
   grid-area: two;
@@ -176,6 +248,7 @@
   background-image: url("./images/entree.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .three {
   grid-area: three;
@@ -183,6 +256,7 @@
   background-image: url("./images/dessert.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .four {
   grid-area: four;
@@ -190,6 +264,7 @@
   background-image: url("./images/drink.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .five {
   grid-area: five;
@@ -197,6 +272,7 @@
   background-image: url("./images/lunch.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 #label {
@@ -218,13 +294,15 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
-  height: 150px;
+  height: auto;
   background-color: #984447;
   color: whitesmoke;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .e-sign label {
   margin-top: 20px;
+  font-weight: 400;
 }
 .e-sign form {
   display: flex;
@@ -245,6 +323,11 @@
   padding: 2px;
   border-radius: 5px;
   font-size: 16px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.e-sign p {
+  margin: 20px;
 }
 
 .e-sign-input:focus {
@@ -261,6 +344,7 @@
   border-radius: 5px;
   font-size: 16px;
   cursor: pointer;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 .e-sign-button:hover {
   width: 10%;
@@ -284,6 +368,7 @@
   background-size: cover;
   color: whitesmoke;
   overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .about-links {
@@ -294,6 +379,7 @@
   text-decoration: none;
   color: whitesmoke;
   cursor: pointer;
+  margin: 5px;
 }
 .about-links a:hover {
   color: #468c98;
@@ -304,6 +390,11 @@
   height: 100%;
   margin-bottom: 200px;
   width: 20%;
+}
+
+.footer-container h3 {
+  color: whitesmoke;
+  font-size: 24px;
 }
 
 .footer img {

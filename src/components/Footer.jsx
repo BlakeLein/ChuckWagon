@@ -9,7 +9,6 @@ export default function Footer() {
         <h3>About</h3>
         <div className="about-links">
           <Link to="about">Our Story</Link>
-          <Link to="careers">We're Hiring</Link>
           <Link to="contact">Contact Us</Link>
           <Link to="locate">Find a Restaurant</Link>
         </div>

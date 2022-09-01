@@ -1,8 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../App.css";
+import { useSelector, useDispatch } from "react-redux";
 
 export default function Homepage() {
+  const dispatch = useDispatch();
+  const emailToAdd = useSelector((state) => state.review.emailToAdd);
   return (
     <div className="homepage">
       <div className="container-1">
@@ -12,7 +15,9 @@ export default function Homepage() {
       </div>
       <h1 id="h1">Specials For Every Day of the Week</h1>
       <div className="container-2">
-        <button className="specials-btn">Click Here to View Specials</button>
+        <Link to="/specials" className="specials-btn">
+          Click Here to View Specials
+        </Link>
       </div>
       <div className="container-3">
         <h1 id="h1">Menu Highlights</h1>
@@ -37,17 +42,31 @@ export default function Homepage() {
       <div className="container-4">
         <h1 id="h1">Join our Electronic Mailing List</h1>
         <div className="e-sign">
-          <label>
-            Receive notifications on daily promotions and special offers!
-          </label>
-          <form>
+          <p>Receive notifications on daily promotions and special offers!</p>
+          <form
+            onSubmit={() => {
+              dispatch({ type: "ADD_EMAIL", payload: emailToAdd });
+              alert(
+                "You have successfully been added to our electronic mailing list!"
+              );
+            }}
+          >
             <input
+              onChange={(e) =>
+                dispatch({ type: "EMAIL_TO_ADD", payload: e.target.value })
+              }
               className="e-sign-input"
               placeholder="Email Address"
               type="text"
             />
             <input className="e-sign-button" type="submit" value="Join" />
           </form>
+          <p>
+            By signing up for our electornic mailing service, you are agreeing
+            to receive promotional offers and notifications. The Chuck Wagon
+            Cafe & Grill will not share your personal information without your
+            explicit consent.
+          </p>
         </div>
       </div>
     </div>

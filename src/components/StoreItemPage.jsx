@@ -1,22 +1,44 @@
 import React from "react";
 import "../css/store.css";
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
+import { Link } from "react-router-dom";
 
 export default function StoreItemPage() {
   const item = useSelector((state) => state?.store?.itemToView);
+  const dispatch = useDispatch();
+  const checkForSize = (object) => {
+    if (item.size !== "") {
+      dispatch({ type: "ADD_TO_CART", payload: item });
+      alert(`Added ${item.name} to your cart`);
+    } else {
+      alert("Please select a size");
+    }
+  };
   return (
     <div className="store-item-page-container">
       <div className="store-item-page-inner-container">
-        <h1 id="store-item-page-h1">{item?.name}</h1>
-        <div>
-          <div>
-            <img />
-            <img />
+        <h1 id="h1">{item?.name}</h1>
+        <div className="store-item-page-content-container">
+          <div className="store-item-page-pictures">
+            <img src={item?.imgA} />
+            <img src={item?.imgB} />
           </div>
           <div>
-            <p>{item?.description}</p>
-            <select placeholder="Select Size">
-              <option>Select Size</option>
+            <p id="h1-sub">{item?.description}</p>
+            <select
+              className={item?.isClothing ? "visible" : "hidden"}
+              name={item.name}
+              onChange={(e) =>
+                dispatch({
+                  type: "CHANGE_SIZE",
+                  payload: e.target.value,
+                })
+              }
+              required
+            >
+              <option disabled selected hidden>
+                Select Size
+              </option>
               <option>Youth Small</option>
               <option>Youth Medium</option>
               <option>Youth Large</option>
@@ -28,6 +50,19 @@ export default function StoreItemPage() {
               <option>Adult 3x-Large</option>
             </select>
             <p>${item?.price}</p>
+            <div className="store-item-page-button-container">
+              <button
+                className="shop-order-btn"
+                onClick={() => {
+                  checkForSize(item);
+                }}
+              >
+                Add to Cart
+              </button>
+              <Link className="return-btn" to="/store">
+                Return to Shop
+              </Link>
+            </div>
           </div>
         </div>
       </div>

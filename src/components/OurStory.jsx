@@ -37,24 +37,6 @@ export default function OurStory() {
             ))}
           </div>
         </div>
-        <div className="form-container">
-          <h3>Now Tell Us What You Think</h3>
-          <label>Tell us about your experience!</label>
-          <form className="about-form">
-            <div className="form-names">
-              <input placeholder="First Name" type="text" name="first" />
-              <input placeholder="Last Name" type="text" name="last" />
-            </div>
-            <input placeholder="Email Adress" type="email" name="email" />
-            <input
-              size="500"
-              placeholder="Tell us about your visit!"
-              type="text"
-              name="about"
-            />
-            <input id="form-btn" type="submit" name="submit" value="Send" />
-          </form>
-        </div>
       </div>
     </div>
   );
