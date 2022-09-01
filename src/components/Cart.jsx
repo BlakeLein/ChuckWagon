@@ -34,7 +34,7 @@ export default function Cart() {
       <div className="dummy"></div>
       <div className="main-cart-container">
         <h1 id="h1">Cart</h1>
-        <h1 id="h1" className={cartItems.length < 1 ? "visible" : "hidden"}>
+        <h1 id="h1-sub" className={cartItems.length < 1 ? "visible" : "hidden"}>
           You currently have no items in your cart
         </h1>
         <div className="cart-item-container">

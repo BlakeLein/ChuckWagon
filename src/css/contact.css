@@ -12,7 +12,7 @@ h3 {
 
 .inner-container {
   width: 80%;
-  height: 600px;
+  height: auto;
   margin-bottom: 100px;
   border: solid 1px #101419;
   display: flex;
@@ -93,4 +93,22 @@ p {
 #form-btn:hover {
   background-color: #add9f4;
   color: #101419;
+}
+
+@media (max-width: 1000px) {
+  .inner-outer-container {
+    width: 90%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .review-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
 }

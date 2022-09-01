@@ -18,6 +18,7 @@ export default function Specials() {
           </div>
         </div>
         <div className="specials-item">
+          <img src={require("../images/specials/tuesday.jpg")} />
           <div className="specials-info">
             <h2 id="h1-sub-specials" className="day">
               Tuesday
@@ -28,7 +29,6 @@ export default function Specials() {
               off or build your own pizza for 10% off!
             </p>
           </div>
-          <img src={require("../images/specials/tuesday.jpg")} />
         </div>
         <div className="specials-item">
           <img src={require("../images/specials/wednesday.jpg")} />
@@ -44,6 +44,7 @@ export default function Specials() {
           </div>
         </div>
         <div className="specials-item">
+          <img src={require("../images/specials/thursday.jpg")} />
           <div className="specials-info">
             <h2 id="h1-sub-specials" className="day">
               Thursday
@@ -56,7 +57,6 @@ export default function Specials() {
               on one of our big screens!
             </p>
           </div>
-          <img src={require("../images/specials/thursday.jpg")} />
         </div>
         <div className="specials-item">
           <img src={require("../images/specials/friday.jpg")} />
@@ -72,6 +72,7 @@ export default function Specials() {
           </div>
         </div>
         <div className="specials-item">
+          <img src={require("../images/specials/saturday.jpg")} />
           <div className="specials-info">
             <h2 id="h1-sub-specials" className="day">
               Saturday
@@ -87,7 +88,6 @@ export default function Specials() {
               contact us at info@chuckwagon.org
             </p>
           </div>
-          <img src={require("../images/specials/saturday.jpg")} />
         </div>
         <div className="specials-item">
           <img src={require("../images/specials/sunday.jpg")} />

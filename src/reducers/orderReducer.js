@@ -1,5 +1,5 @@
 const initialState = {
-  order: [],
+  listOfOrders: [],
   firstName: "",
   lastName: "",
   emailAddress: "",
@@ -16,27 +16,6 @@ const initialState = {
 
 const cartReducer = (state = initialState, action) => {
   switch (action.type) {
-    case "PLACE_ORDER":
-      return {
-        ...state,
-        order: [
-          ...state.order,
-          {
-            firstName: state.firstName,
-            lastName: state.lastName,
-            emailAddress: state.emailAddress,
-            street: state.street,
-            city: state.city,
-            state: state.state,
-            pickUpDate: state.pickUpDate,
-            pickUpTime: state.pickUpTime,
-            cardNumber: state.cardNumber,
-            expMonth: state.expMonth,
-            expYear: state.expYear,
-            CVV: state.CVV,
-          },
-        ],
-      };
     case "FIRST":
       return { ...state, firstName: action.payload };
     case "LAST":
@@ -61,6 +40,26 @@ const cartReducer = (state = initialState, action) => {
       return { ...state, expYear: action.payload };
     case "CVV":
       return { ...state, CVV: action.payload };
+    case "PLACE_ORDER":
+      return {
+        listOfOrders: [
+          ...state.listOfOrders,
+          {
+            firstName: state.firstName,
+            lastName: state.lastName,
+            emailAddress: state.emailAddress,
+            street: state.street,
+            city: state.city,
+            state: state.state,
+            pickUpDate: state.pickUpDate,
+            pickUpTime: state.pickUpTime,
+            cardNumber: state.cardNumber,
+            expMonth: state.expMonth,
+            expYear: state.expYear,
+            CVV: state.CVV,
+          },
+        ],
+      };
     default:
       return state;
   }

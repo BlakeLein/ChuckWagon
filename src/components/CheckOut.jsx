@@ -24,7 +24,7 @@ export default function CheckOut() {
       <h1 id="h1">Checkout</h1>
       <div className="checkout-inner-container">
         <h3>Cart Total: ${total}</h3>
-        <form className="form">
+        <div className="form">
           <div className="names">
             <input
               onChange={(e) =>
@@ -174,14 +174,13 @@ export default function CheckOut() {
             </label>
           </div>
           <button
-            onClick={dispatch({ type: "PLACE_ORDER" })}
+            onClick={() => dispatch({ type: "PLACE_ORDER" })}
             id="submit-btn"
-            type="submit"
             name="submit"
           >
             Place Order!
           </button>
-        </form>
+        </div>
       </div>
     </div>
   );

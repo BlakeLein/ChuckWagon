@@ -9,7 +9,6 @@ export default function Contact() {
       <div className="inner-container">
         <div className="inner-outer-container">
           <div className="info-container">
-            <h3 id="h1-sub">Contact Us</h3>
             <label>
               Phone
               <p>(281) 555-2140</p>
