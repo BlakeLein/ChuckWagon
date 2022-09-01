@@ -1,6 +1,6 @@
 # **_Chuck Wagon_**
 
-"Musicly" is an online application where music instructors and students can coordinate private lessons. This website utilizes a full-stack coding library (HTML, CSS, JavaScript, Node.js, Express.js, Postgres, and Sequelize).
+"The Chuck Wagon" is a website for a fictional restaurant. The purpose of this website is to showcase React as a front-end library for clean, practical applications.
 
 ---
 
@@ -14,13 +14,13 @@ Published September 2022
 
 [Email Me](blake.lein@gmail.com) | [GitHub](https://github.com/BlakeLein/ChuckWagon) | [LinkedIn](https://www.linkedin.com/in/blake-lein-bb6187238)
 
-[You can view an article I wrote about the making of this project here]()
+[You can view an article I wrote about the making of this project here](https://medium.com/@blake.lein/writing-a-restaurant-7b858196a2ee)
 
 ---
 
 ## **Requirements**
 
-Chuck Wagon is deployed online, so all you need is this [link](www.www.com)
+Chuck Wagon is deployed online, so all you need is this [link](https://charming-crepe-f11c6c.netlify.app/)
 
 ## How Chuck Wagon Works
 
@@ -28,7 +28,7 @@ Chuck Wagon is deployed online, so all you need is this [link](www.www.com)
 
 ### Wesbite Overview
 
-Musicly is an online web application that utilizes a full-stack coding library to give instructors and students the ability to schedule and cancel private music lessons. Instructors can create lesson slots to include date, start and stop time, and cost. Students can track all available lessons that their teacher has created and claim them so no other student can. These claimed lessons appear in their "My Lessons" tab and simultaneously show up in their teacher's "Claimed Lessons" tab. Since Musicly requires a password-protected account, all information is confidential between the instructor and student
+"The Chuck Wagon" utilizes a front-end library consisting of React and Redux. Users can learn all about this hometown restaurant - what they sell, what they value, and how they operate. Users can also add menu or store items to their cart, check-out, and leave reviews for the owners to see. "The Chuck Wagon" is all about representing the passionate restaurant owner in a way that honors their hard work and dedication to bringing quality food to their customers.
 
 ---
 
@@ -36,49 +36,72 @@ Musicly is an online web application that utilizes a full-stack coding library t
 
 Here are some of the website's features in greater detail:
 
-- Password-protected accounts for instructor and student privacy.
-- Resonsive on all media devices.
-- "Create Lesson" feature for instructors to build out their schedule based on dates, times, and cost.
-- Instructors can cancel and remove students from their schedule.
-- Ability for students to claim available lessons and have them show up as claimed on their instructor's account.
-- Full capabilities for updating account information or deleting your account altogether.
+- A clean and consistent modern design.
+- Users can browse a full (fake) menu with pictures, descriptions, and prices.
+- Users can browse a full e-commerce store with pictures, descriptions, and prices. Look out for the custom logo!
+- Users can sign up for electronic updates, select and purchase menu items, and leave reviews for the owner.
+- Fully resonsive on all media devices.
 
 ---
 
-## Chuck Wagon In Development
+## Color Palette
 
-This website represents the third major project in our Digital Crafts coursework and demonstrates our first full-stack project. Musicly utilizes HTML, CSS, JavaScript, Node.js, Express.js, PostgreSQL, and Sequelize.
+Cordovan - #984447
 
-As our projects have gotten bigger, so also has the potential for each project. Here are some ways we might expand Musicly:
+Uranian Blue - #ADD9F4
 
-- Creating an authentication system for users creating their accounts.
-- Creating an approval process for instructors signing up.
-- Adding a messaging feature to the app for students and parents to communicate directly through the app.
-- Sorting the lesson slots by date with an automatic expiration system.
-- A "calendar" layout for created lessons to appear in a neat format.
+Queen Blue - #476C9B
+
+Steel Teal - #468C98
+
+Rich Black FOGRA 29 - #101419
+
+<img src="src/images/readMeImages/palette.png" 
+alt="Color Palette"
+width="900" height="400">
+
+---
+
+## The Chuck Wagon In Development
+
+This website represents the fourth major project in our Digital Crafts coursework. "The Chuck Wagon" is intended to demonstrate a clear understanding of using React.js as a front-end framework. For demo purposes, all information is stored in redux-persist storage; however, the application can easily be converted into pulling and placing information into a database.
+
+Here are some ways I would continue to develop "The Chuck Wagon":
+
+- Hooking the website to a backend library for a more relevant storage solution.
+- Hooking the website to a purchasing API to better simulate an online transaction.
+- Creating a login function where users can maintain a profile along with an order history and a "favorites" page.
 
 ## Photos of Chuck Wagons
 
-<img src="public/images/home.png" 
+<img src="src/images/readMeImages/home.png" 
 alt="Home Page"
-width="900" height="400">
+width="700" height="400">
 
-<img src="public/images/signin.png" 
-alt="Sign In Page"
-width="900" height="400">
+<img src="src/images/readMeImages/menu.png" 
+alt="Menu Page"
+width="700" height="400">
 
-<img src="public/images/instructorDash.png" 
-alt="Student Dash"
-width="900" height="400">
+<img src="src/images/readMeImages/find.png" 
+alt="Find Page"
+width="700" height="400">
 
-<img src="public/images/studentDash.png" 
-alt="Mobile Dash"
-width="900" height="400">
+<img src="src/images/readMeImages/store.png" 
+alt="Store Page"
+width="700" height="400">
 
-<img src="public/images/newLesson.png" 
-alt="Create Lesson Page"
-width="900" height="400">
+<img src="src/images/readMeImages/item.png" 
+alt="Item Page"
+width="700" height="400">
 
-<img src="public/images/settings.png" 
-alt="Settings Page"
-width="900" height="400">
+<img src="src/images/readMeImages/cart.png" 
+alt="Cart Page"
+width="700" height="400">
+
+<img src="src/images/readMeImages/checkout.png" 
+alt="Checkout Page"
+width="700" height="400">
+
+<img src="src/images/readMeImages/contact.png" 
+alt="Contact Page"
+width="700" height="400">
