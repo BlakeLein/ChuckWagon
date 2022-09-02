@@ -62,7 +62,7 @@ export default function Homepage() {
             <input className="e-sign-button" type="submit" value="Join" />
           </form>
           <p>
-            By signing up for our electornic mailing service, you are agreeing
+            By signing up for our electronic mailing service, you are agreeing
             to receive promotional offers and notifications. The Chuck Wagon
             Cafe & Grill will not share your personal information without your
             explicit consent.

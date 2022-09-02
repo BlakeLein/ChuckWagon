@@ -74,7 +74,7 @@ export default function Navbar() {
                   Contact Us
                 </Link>
                 <Link to="/cart" onClick={showNavbar}>
-                  Cart{"  "} <FontAwesomeIcon icon={faCartShopping} />
+                  <FontAwesomeIcon icon={faCartShopping} />
                 </Link>
               </div>
             </div>
